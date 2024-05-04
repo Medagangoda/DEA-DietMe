@@ -1,10 +1,3 @@
-<%-- 
-    Document   : meals
-    Created on : Apr 17, 2024, 12:35:20 AM
-    Author     : Imandi
---%>
-
-
 <%@page import="com.teamhydra.util.assetsUrl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -23,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Istok Web:wght@400&display=swap"
     />
     <link
-      rel="stylesheet"8
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
     />
     </head>
@@ -103,13 +96,10 @@
                                 <p>Rs.1000/=</p>
                             </div>
                             <div class="orderButtonDiv">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Launch demo modal
+                                <button type="button" class="btn btn-primary" 
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    more details
                                 </button>
-
-
-
-
                             </div>
                         </div>
                     </div>
@@ -122,5 +112,8 @@
                 <%@include file="../Common/footer.jspf"  %>
 
     </body>
+    <script>
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+</script>
 
 </html>
